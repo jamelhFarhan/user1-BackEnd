@@ -1,5 +1,4 @@
-
-require('dotenv').config()
+require("dotenv").config();
 const express = require("express");
 const app = express();
 require("./db/dbb");
@@ -8,7 +7,7 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 
-const Routeproudect = require("../BackEnd/db/routers/route/Routeproudect");
+const Routeproudect = require("./db/routers/route/Routeproudect");
 const loginRout = require("./db/routers/route/loginRout");
 const signUp = require("./db/routers/route/signUp");
 
